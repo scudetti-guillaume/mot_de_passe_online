@@ -26,7 +26,7 @@ const GameGM = () => {
             setToken(getToken);
 
             const res = await new Promise((resolve, reject) => {
-                socket.emit('getGameMaster', { token: token }, (response) => {
+                socket.emit('getGameMaster', { token: getToken }, (response) => {
                     resolve(response);
                 });
             });

@@ -19,7 +19,7 @@ const app = express();
 const server = http.createServer(app);
 
 const io = socketIO(server, {
-    // path: `${process.env.BASE_URL}`,
+    path: `${process.env.BASE_URL}`,
     cors: {
         origin: "*",
         methods: ["GET", "POST"],
@@ -167,9 +167,9 @@ io.on('connection', (socket) => {
 
 });
 
-const PORT = 4000
-server.listen(PORT, (port) =>
-    console.log(`connected ${PORT}` )
+// const PORT = 4000
+server.listen(() =>
+    console.log(`connected}` )
 );
 
 mongoose

@@ -1,7 +1,7 @@
 {
   "name": "ahmed-mdp-back",
   "version": "1.0.0",
-  "description": "ahmed mot de passe",
+  "description": "mot de passe",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",

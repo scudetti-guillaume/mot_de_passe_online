@@ -129,14 +129,7 @@ io.on('connection', (socket) => {
     })});
     
     socket.on('getDataGame', async (data, callback) => {teamRoute.getDataGame(data, callback); });
-    // socket.on('getDataGame', async(callback) => {
-    //     teamRoute.getDataGame((response) => {
-    //         callback(response);
-    //         if (response.success) {
-    //             io.emit('Game', response.data);
-    //         }
-    //     });
-    // });
+  
 
     socket.on('teamReset', async(callback)=> {
         teamRoute.teamReset((response) => {
